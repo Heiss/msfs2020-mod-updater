@@ -2,6 +2,10 @@
 
 This is an application to make it easy to download or update mods for msfs2020.
 
+# Status
+
+0 % progress
+
 ## Hoster
 
 | Hoster                               | Download | Updates | Login needed? |
