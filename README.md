@@ -6,6 +6,7 @@ This is an application to make it easy to download or update mods for msfs2020.
 
 | Hoster                               | Download | Updates | Login needed? |
 | ------------------------------------ | -------- | ------- | ------------- |
+| Static link (check for hash change)  | ❌        | ❌       | no            |
 | [github.com](https://github.com)     | ❌        | ❌       | no            |
 | [flightsim.to](https://flightsim.to) | ❌        | ❌       | yes           |
 
