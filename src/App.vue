@@ -1,22 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+  </div>
+  <router-view />
 </template>
 
+
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import { invoke } from "@tauri-apps/api/tauri";
 
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
   mounted() {
-    // With the Tauri API npm package:
-    // With the Tauri global script, enabled when `tauri.conf.json > build > withGlobalTauri` is set to true:
-    //const invoke = window.__TAURI__.invoke;
-
     // Invoke the command
     invoke("my_custom_command", { invokeMessage: "Hello!" }).then((message) =>
       console.log(message)
@@ -32,6 +28,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
