@@ -4,7 +4,7 @@ pub struct CommunityModules {
   list: Vec<Github>,
 }
 
-pub impl CommunityModules {
+impl CommunityModules {
   pub fn new() -> Self {
     CommunityModules { list: Vec::new() }
   }
@@ -16,3 +16,12 @@ pub impl CommunityModules {
 }
 
 struct Github {}
+
+#[cfg(test)]
+mod tests {
+  #[test]
+  fn test_creation() {
+    let mut set = CommunityModules::new().add_mod(Githb {});
+    set.add_mod(Github {})
+  }
+}
