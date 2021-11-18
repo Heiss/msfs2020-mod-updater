@@ -18,6 +18,8 @@ This is an application to make it easy to download or update mods for msfs2020.
 
 Because MSFS2020 was developed by Microsoft and is playable only on windows, this application is only built for windows. So you need the following tools for windows. Install the tools and execute the commands in an admin powershell.
 
+In general, you need to setup [tauri](https://tauri.studio/en/docs/getting-started/setup-windows), so please take a look there to get everything up. Here we will show only some tools with some useful commands you need for a ready-to-go setup.
+
 ### [nvm-windows](https://github.com/coreybutler/nvm-windows)
 
 ```powershell
