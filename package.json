@@ -2,6 +2,7 @@
   "name": "msfs-2020-mod-updater",
   "version": "1.0.0",
   "description": "MSFS 2020 Mod Updater",
+  "private": "true",
   "keywords": [
     "vite",
     "tauri",
@@ -13,10 +14,10 @@
   "scripts": {
     "lint": "exit 0;",
     "serve": "vite-tauri dev",
-    "serve:native": "VITE_HTTP_HANDLER=NATIVE vite --port 8080",
+    "serve:native": "vite --port 8080",
     "serve:tauri": "tauri dev",
     "build:web": "vite build",
-    "build": "VITE_HTTP_HANDLER=NATIVE vite build && tauri build"
+    "build": "vite build && tauri build"
   },
   "dependencies": {
     "@mdi/font": "6.4.95",
@@ -41,5 +42,5 @@
     "type": "github",
     "url": "https://github.com/Heiss/msfs2020-mod-updater"
   },
-  "license": "GPL-3"
+  "license": "GPLv3"
 }
