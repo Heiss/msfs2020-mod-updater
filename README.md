@@ -114,6 +114,7 @@ Very long
 | notice       | A description which can be used to describe the modifcation. Defaults to empty string. Supports multiline strings.                                  | ❌        |
 | download_url | The url for the modification to download from. The filecontent needs to be zip, rar or 7zip. No checks against filenaming.                          | ✔️        |
 | extras       | If this modification needs extra steps to work, you can specify them here. Defaults to empty list. Extras is so special, we will describe it later. | ❌        |
+| sign         | The hash value of the corresponding file for security reasons.                                                                                      | ✔️        |
 
 **Example**
 
@@ -124,9 +125,11 @@ modifications:
     - name: Working Title G3000
       key: g3000
       version: v0.7.6
+      sign: sha256:ASDDXCYAAAAA
       download_url: https://github.com/Working-Title-MSFS-Mods/fspackages/releases/download/g3000-v0.7.6/workingtitle-g3000-v0.7.6.zip
     - name: Working Title CJ4
       key: cj4
+      sign: sha256:ASDDXCYAAAAA
       version: v0.12.9
       notice: |
 Working Title CJ4 v0.12.9
@@ -186,6 +189,7 @@ modifications:
       key: g3000
       version: v0.7.6
       download_url: https://github.com/Working-Title-MSFS-Mods/fspackages/releases/download/g3000-v0.7.6/workingtitle-g3000-v0.7.6.zip
+      sign: sha256:ASDDXCYAAAAA
       extras:
         - dependencies
       dependencies:
@@ -196,6 +200,7 @@ modifications:
     - name: Working Title CJ4
       key: cj4
       version: v0.12.9
+      sign: sha256:ASDDXCYAAAAA
       download_url: https://github.com/Working-Title-MSFS-Mods/fspackages/releases/download/cj4-v0.12.9/workingtitle-cj4-v0.12.9.zip
 ```
 

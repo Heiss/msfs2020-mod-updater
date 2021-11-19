@@ -15,7 +15,7 @@ export default createRouter({
     {
       path: "/modules",
       title: "Modules",
-      icon: "mdi-download",
+      icon: "mdi-view-module",
       component: () => import('./pages/modules/index.vue')
     },
     {
@@ -23,6 +23,12 @@ export default createRouter({
       title: "Repositories",
       icon: "mdi-download",
       component: () => import('./pages/repositories/index.vue')
+    },
+    {
+      path: "/settings",
+      title: "Settings",
+      icon: "mdi-cog",
+      component: () => import('./pages/settings/index.vue')
     },
     {
       path: '/about',
