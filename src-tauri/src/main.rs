@@ -5,7 +5,9 @@
 
 #[tauri::command]
 fn my_custom_command(invoke_message: String) -> String {
-  format!("Hello from Rust! we got: {}", invoke_message).into()
+  let str = format!("Hello from Rust! we got: {}", invoke_message).into();
+  println!("{}", str);
+  str
 }
 
 fn main() {

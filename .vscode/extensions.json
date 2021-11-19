@@ -3,6 +3,7 @@
 		"visualstudioexptteam.vscodeintellicode",
 		"editorconfig.editorconfig",
 		"VSpaceCode.vspacecode",
-		"tauri-apps.tauri-vscode"
+		"tauri-apps.tauri-vscode",
+		"octref.vetur"
 	]
 }
