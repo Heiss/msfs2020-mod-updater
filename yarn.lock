@@ -3460,14 +3460,6 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vite-plugin-tauri@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/vite-plugin-tauri/-/vite-plugin-tauri-0.1.6.tgz#f89b8f8fa6c8d82a374058f25a9549263d6b11f1"
-  integrity sha512-YDY29rmKSOfrcNdiLN+8tRyZ1tmoGIZTMW1PaWQZzhi6SxtjBGa0zsWVB9kZ0UUF/Vl7TerUk4x3DuIAjkz6qQ==
-  dependencies:
-    chalk "4.1.2"
-    got "11.8.2"
-
 vite@2.6.13:
   version "2.6.13"
   resolved "https://registry.yarnpkg.com/vite/-/vite-2.6.13.tgz#16b3ec85a66d5b461ac29a903874d4357f9af432"
