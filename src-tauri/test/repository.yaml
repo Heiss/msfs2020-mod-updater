@@ -1,0 +1,10 @@
+sign: CXZZZZZZZZAAAAAXXXXCCZZZZAAAXXXXXXXXXXXXXXXXXXXCCCCCCCCCCCCCCCCZZZZZZZZZZZZZZZ
+created_at: 2021-11-19 08:50:57.762365458 UTC
+modules:
+  - name: Test Module
+    key: test
+    sign: ASDDXCYAAAAA
+    version: v0.0.1
+    notice: |
+      Test Module
+    download_url: file://./test/module.zip

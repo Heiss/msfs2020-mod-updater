@@ -13,7 +13,7 @@ impl Settings {
     }
   }
 
-  pub fn default_page(self, page: &str) -> Self {
+  pub fn default_page(mut self, page: &str) -> Self {
     self.default_page = page.into();
     self
   }
@@ -21,9 +21,13 @@ impl Settings {
 
 #[cfg(test)]
 mod tests {
+  use crate::helpers::settings::Settings;
+
   #[test]
   fn test_creation() {
-    let mut set = Settings::new().default_page("");
-    set.default_page("about")
+    let expected_page = "about";
+    let setting = Settings::new("/").default_page(expected_page);
+
+    assert_eq!(setting.default_page, expected_page);
   }
 }

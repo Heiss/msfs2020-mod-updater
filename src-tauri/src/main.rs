@@ -3,6 +3,8 @@
   windows_subsystem = "windows"
 )]
 
+use app::repositories;
+
 #[tauri::command]
 fn my_custom_command(invoke_message: String) -> String {
   let str = format!("Hello from Rust! we got: {}", invoke_message).into();
