@@ -99,11 +99,11 @@ Very long
 
 ### mod-repository.yaml
 
-| fieldname     | description                                                                                                                                                       | required |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| sign          | The signature of this file to verify the content. The repository entry point holds the public_key,  private_key will be used in ci/cd pipeline from mod provider. | ❌        |
-| created_at    | The datetime this file was created at. Format: [rfc2822](https://www.ietf.org/rfc/rfc2822.txt)                                                                    | ✔️        |
-| modifications | A list of modifications. (Fields of a modification will be shown later.)                                                                                          | ✔️        |
+| fieldname     | description                                                                                    | required |
+| ------------- | ---------------------------------------------------------------------------------------------- | -------- |
+| sign          | The signature of this file to verify the content. Recommended for security.                    | ❌        |
+| created_at    | The datetime this file was created at. Format: [rfc2822](https://www.ietf.org/rfc/rfc2822.txt) | ✔️        |
+| modifications | A list of modifications. (Fields of a modification will be shown later.)                       | ✔️        |
 
 **Fields of a modification**
 
@@ -114,7 +114,7 @@ Very long
 | notice       | A description which can be used to describe the modifcation. Defaults to empty string. Supports multiline strings.                                  | ❌        |
 | download_url | The url for the modification to download from. The filecontent needs to be zip, rar or 7zip. No checks against filenaming.                          | ✔️        |
 | extras       | If this modification needs extra steps to work, you can specify them here. Defaults to empty list. Extras is so special, we will describe it later. | ❌        |
-| sign         | The hash value of the corresponding file for security reasons.                                                                                      | ✔️        |
+| sign         | The hash value of the corresponding file for security reasons. Recommended to set for security.                                                     | ❌        |
 
 **Example**
 
